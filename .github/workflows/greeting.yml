@@ -14,7 +14,7 @@ jobs:
       - name: Create new issue
         uses: mrdoodles/open-issue@v1
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.MQL_TOKEN }}
           title: Some Issue Title
           body: Some Issue Body
           assignees: ChenfourAmine
