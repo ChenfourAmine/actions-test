@@ -14,6 +14,6 @@ jobs:
           git checkout -b ${{ github.event.issue.title }}
           git push --set-upstream origin ${{ github.event.issue.title }} 
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.MQL_TOKEN }}
 
   
