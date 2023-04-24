@@ -8,12 +8,12 @@ jobs:
   create-new-branch:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout/v3
+      - uses: actions/checkout@v1
       - name: Create new branch
         run: |
           git checkout -b ${{ github.event.issue.title }}
           git push --set-upstream origin ${{ github.event.issue.title }} 
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
+
   
