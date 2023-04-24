@@ -14,7 +14,7 @@ jobs:
       - name: Create new issue
         uses: mrdoodles/open-issue@v1
         with:
-          token: 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
+          token: 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
           title: Some Issue Title
           body: Some Issue Body
           assignees: ChenfourAmine
