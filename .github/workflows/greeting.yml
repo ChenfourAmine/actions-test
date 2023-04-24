@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
-        uses: mrdoodles/issue-action@v1
+        uses: mrdoodles/open-issue@v1
         with:
           token: ${{ secrets.MQL_TOKEN }}
           title: New Issue
