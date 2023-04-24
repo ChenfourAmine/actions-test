@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Create new issue
-        uses: mrdoodles/issue-action@v1
+        uses: mrdoodles/open-issue@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           title: Some Issue Title
