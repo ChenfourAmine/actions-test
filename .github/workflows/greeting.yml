@@ -12,11 +12,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
-        uses: dacbd/create-issue-action@main
+        uses: ManojCSE17/open-issue@v1.0.0
         with:
-          token: ${{secrets.GITHUB_TOKEN}}
+          token: ${{ secrets.GITHUB_TOKEN }}
           title: New Issue
-          body: Some body for the issue
+          body: Some Issue Body
+          assignees: |
+            ChenfourAmine
 
 
 
