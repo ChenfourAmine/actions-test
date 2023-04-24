@@ -12,12 +12,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout code
-        uses: mrdoodles/open-issue@v1
+        uses: buluma/create-issue-action@v2.0.0
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
           title: New Issue
+          token: ${{secrets.GITHUB_TOKEN}}
           body: Some Issue Body
-          assignees: ChenfourAmine
+          #assignees: ChenfourAmine
 
 
 
