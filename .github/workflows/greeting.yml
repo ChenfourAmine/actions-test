@@ -14,12 +14,11 @@ jobs:
       - name: Create new issue
         uses: mrdoodles/open-issue@v1
         with:
-          token: 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
+          token: ${{ secrets.GITHUB_TOKEN }}
           title: Some Issue Title
           body: Some Issue Body
           assignees: ChenfourAmine
         
-
 
 # uses: ManojCSE17/open-issue@v1.0.0
 #         with:
