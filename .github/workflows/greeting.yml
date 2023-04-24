@@ -3,9 +3,6 @@ name: New Contributor Joined
 on:
   member:
     types: [added]
-  push:
-    branches:
-      - "main"
 
 jobs:
   create-new-issue:
@@ -15,9 +12,13 @@ jobs:
         uses: mrdoodles/open-issue@v1
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          title: Some Issue Title
-          body: Some Issue Body
-          assignees: ChenfourAmine
+          title: Clone the main branch in your local repository
+          body: |
+            Hello ${{ github.event.member.login }}!
+            Welcome to our community! We're glad to have you here.
+            To get started, please clone the main branch of our repository 
+            to your local machine .  
+          assignees: ${{ github.event.member.login }}
         
 
 # uses: ManojCSE17/open-issue@v1.0.0
