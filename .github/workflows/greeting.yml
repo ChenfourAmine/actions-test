@@ -11,10 +11,10 @@ jobs:
   create-new-issue:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout code
+      - name: Create new issue
         uses: ManojCSE17/open-issue@v1.0.0
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.MQL_TOKEN}}
           title: New Issue
           body: Some Issue Body
           assignees: |
