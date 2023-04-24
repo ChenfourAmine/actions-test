@@ -2,7 +2,7 @@ name: New Contributor Joined
 
 on:
   member:
-    types: [invited]
+    types: [added]
 
 jobs:
   create-new-issue:
